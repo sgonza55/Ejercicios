@@ -15,8 +15,8 @@ public class PruebaApplication {
 		//System.out.println("Hola Santi");
 	}
 	@GetMapping("/Santi") //http://localhost:8080/Santi
-	public String hello(@RequestParam(value ="name",defaultValue = "World") String name) {
-		//name = "Santiago";
+	public String Santi(@RequestParam(value ="name",defaultValue = "World") String name) {
+		name = "Santiago";
 		//Otra opcion es hacer el Request con ?name=SANTIAGO
 		return String.format("Hola %s!", name);
 	}
